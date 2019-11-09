@@ -5,12 +5,16 @@ import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
 
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.data.repository.CrudRepository;
+import org.springframework.stereotype.Repository;
 
-
+@SpringBootApplication
 
 	@Entity
     public class Question {
+		@Autowired 
       @Id
       @GeneratedValue(strategy=GenerationType.AUTO)
       private long id;
@@ -23,7 +27,7 @@ import org.springframework.data.repository.CrudRepository;
     	super();
     	this.QuestionId=QuestionId;
     	this.TestlestOriginalId=TestlestOriginalId;
-    	this.QuestionOrder=QuestionOrder;
+    	this.QuestionOrder= QuestionOrder;
      }
       public long getid() {
   		return id;
@@ -40,9 +44,8 @@ import org.springframework.data.repository.CrudRepository;
       public int getQuestionOrder() {
     	  return QuestionOrder;
       }
-      public interface QuestionRepository extends CrudRepository <Question, Long> {
-
-      }
+      
+     
 
     }
 	

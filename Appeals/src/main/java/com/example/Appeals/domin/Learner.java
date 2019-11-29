@@ -51,5 +51,29 @@ public class Learner {
       public String getUserName() {
     	  return UserName;
       }
+      public String getPassword() {
+    	  return Password;
+      }
+      public String getIdNumber() {
+    	  return IdNumber;
+      }
+      public String getFirstName() {
+    	  return FirstName;
+      }
+      public String getLastName() {
+    	  return LastName;
+      }
+      public String getTestletOriginalId() {
+    	  return TestletOriginalId;
+      }
+      public String getTestletTitle() {
+    	  return TestletTitle;
+      }
+      public boolean getIsAppealed() {
+    	  return IsAppealed;
+      }
+      public Date getLastAppealDate() {
+    	  return LastAppealDate;
+      }
 
 }

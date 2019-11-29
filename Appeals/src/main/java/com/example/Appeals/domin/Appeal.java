@@ -35,5 +35,36 @@ public class Appeal {
     public long getid() {
   		return id;
   	}
+    public String getLearnerId() {
+    	return LearnerId;
+    }
+    public String getLearnerFirstName() {
+    	return LearnerFirstName;
+    }
+    public String getLearnerLastName() {
+    	return LearnerLastName;
+    }
+    public String getQuestionId() {
+    	return QuestionId;
+    }
+    public String getTestletOriginalId() {
+    	return TestletOriginalId;
+    }
+    public String getNotes() {
+    	return Notes;
+    }
+    public String getAnswer() {
+    	return Answer;
+    }
+    public String getbibliography() {
+    	return bibliography;
+    }
+    public String getIdNumber() {
+    	return IdNumber;
+    }
+    public int getQuestionNumer() {
+    	return QuestionNumer;
+    }
+  
 
 }

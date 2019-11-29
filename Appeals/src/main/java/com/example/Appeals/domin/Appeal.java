@@ -16,6 +16,7 @@ public class Appeal {
     private long id;
     private String LearnerId, LearnerFirstName, LearnerLastName, QuestionId, TestletOriginalId, Notes,Answer, bibliography, IdNumber;
     private int QuestionNumer;
+    public Appeal() {}
     public Appeal(String LearnerId, String LearnerFirstName,String LearnerLastName,String QuestionId,
     		String TestletOriginalId, String  Notes, String  Answer, String bibliography,String IdNumber,  int QuestionNumer )
     {

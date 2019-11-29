@@ -7,6 +7,7 @@ import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.data.jpa.repository.config.EnableJpaRepositories;
 
+import com.example.Appeals.domin.AppealRepository;
 import com.example.Appeals.domin.Learner;
 import com.example.Appeals.domin.LearnerRepository;
 import com.example.Appeals.domin.Question;
@@ -22,7 +23,8 @@ import org.springframework.boot.autoconfigure.domain.EntityScan;
 
 public class AppealsApplication {
 	
-	
+	@Autowired
+	private AppealRepository appealrepository;
 	@Autowired 
     private QuestionRepository repository;
 	@Autowired

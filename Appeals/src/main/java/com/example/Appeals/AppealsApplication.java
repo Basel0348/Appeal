@@ -7,6 +7,7 @@ import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.data.jpa.repository.config.EnableJpaRepositories;
 
+import com.example.Appeals.domin.Appeal;
 import com.example.Appeals.domin.AppealRepository;
 import com.example.Appeals.domin.Learner;
 import com.example.Appeals.domin.LearnerRepository;
@@ -41,6 +42,7 @@ public class AppealsApplication {
         repository.save(new Question("Q78", "English_Exam", 2));    
          repository.save(new Question("Q51", "English_Exam", 3));
          Learnerrespository.save(new Learner("Basel","201030673",false));
+         appealrepository.save(new Appeal("43534","באסל","ארקייה","Q23","Med_Exam","Bla bla bla...","ttt","fdfgdgf","3455666",34));
       };
     } 
 

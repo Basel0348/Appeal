@@ -6,7 +6,7 @@ import org.springframework.web.bind.annotation.RestController;
 
 import com.example.Appeals.domin.Appeal;
 import com.example.Appeals.domin.AppealRepository;
-import com.example.Appeals.domin.Learner;
+
 
 @RestController
 public class AppealController{

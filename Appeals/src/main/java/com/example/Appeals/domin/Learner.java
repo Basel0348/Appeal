@@ -48,5 +48,8 @@ public class Learner {
       public long getid() {
   		return id;
   	}
+      public String getUserName() {
+    	  return UserName;
+      }
 
 }

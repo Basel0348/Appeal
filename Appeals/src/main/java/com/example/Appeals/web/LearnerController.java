@@ -15,7 +15,7 @@ public class LearnerController {
     private LearnerRepository learnerrepository;
 
 	  @RequestMapping("/learners")
-      public Iterable<Learner> getlearners() {
+      public Iterable<Learner> getLearners() {
 		  return learnerrepository.findAll();
 
       } 

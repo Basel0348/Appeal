@@ -15,7 +15,7 @@ public class AppealController{
 	
 	
 	@RequestMapping("/appeals")
-    public Iterable<Appeal> getappeals() {
+    public Iterable<Appeal> getAppeals() {
 		  return appealrepository.findAll();
 
     } 

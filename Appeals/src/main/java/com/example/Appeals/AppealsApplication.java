@@ -6,6 +6,9 @@ import org.springframework.boot.CommandLineRunner;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.data.jpa.repository.config.EnableJpaRepositories;
+
+import com.example.Appeals.domin.Learner;
+import com.example.Appeals.domin.LearnerRepository;
 import com.example.Appeals.domin.Question;
 import com.example.Appeals.domin.QuestionRepository;
 
@@ -22,6 +25,8 @@ public class AppealsApplication {
 	
 	@Autowired 
     private QuestionRepository repository;
+	@Autowired
+	private LearnerRepository Learnerrespository;
 	public static void main(String[] args) {
 		//coment
 		SpringApplication.run(AppealsApplication.class, args);
@@ -33,6 +38,7 @@ public class AppealsApplication {
         repository.save(new Question("Q457", "English_Exam", 1));
         repository.save(new Question("Q78", "English_Exam", 2));    
          repository.save(new Question("Q51", "English_Exam", 3));
+         Learnerrespository.save(new Learner("Basel","201030673",false));
       };
     } 
 

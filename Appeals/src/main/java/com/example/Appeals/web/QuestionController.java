@@ -6,6 +6,9 @@ import org.springframework.web.bind.annotation.RestController;
 
 import com.example.Appeals.domin.Question;
 import com.example.Appeals.domin.QuestionRepository;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RestController;
 
 
 @RestController

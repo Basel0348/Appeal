@@ -22,6 +22,7 @@ public class Learner {
 	private String UserName,  Password,  IdNumber,  FirstName,  LastName, TestletOriginalId, TestletTitle;
 	private boolean IsAppealed;
 	private Date LastAppealDate;
+	public Learner() {}
 	public Learner(String UserName, String IdNumber, boolean IsAppealed) {
 		super();
     	this.UserName=UserName;
